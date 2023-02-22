@@ -1,0 +1,50 @@
+/* Estilos para colores */
+.colores {
+    color: orangered;
+}
+
+.color-hexadecimal {
+    color: #D5C5C8;
+}
+
+.color-rgb {
+    color: rgb(100, 0, 200)
+}
+
+.color-rgba {
+    color: rgba(10, 10, 10, 0.85) 
+}
+
+/* Fondos */
+.fondo {
+    background-color: #DB7F8E;
+    background-image: url("https://wallpaperaccess.com/full/343990.jpg");
+    background-position: bottom;
+}
+.fondo-interno {
+    /* background-color: #DB7F8E; */
+    background-image: url("Imagenes/plants.jpg");
+    background-position: center;
+}
+
+
+/* Tamaños */
+.ancho {
+    background-color:#DB7F8E;
+    width: 300px;
+}
+
+.alto {
+    background-color:#D5C5C8;
+    height: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(100, 0, 100);
+    border-width: 1px;
+    /* border-top: none; */
+    padding: 10px 20px;
+    /* padding: 10px 20px 30px; */
+    margin: 10px;
+}
