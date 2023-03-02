@@ -1,0 +1,19 @@
+/* (1, 0, 0) Este prevalece*/
+/* (0, 1, 0) */
+/* (0, 0, 1) */
+
+h1#h1-id.h1-clase {
+  color: rebeccapurple;
+}
+
+.h1-clase {
+  color: yellow;
+}
+
+h1 {
+  color: blue !important; /* Quinto nivel de especificidad, evitar utilizar */
+}
+
+p {
+  color: brown;
+}
