@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
     font-family: 'Roboto', sans-serif;
-    background-color: #161717;
 }
 
-html {
-    color: #161717;
+body {
+    background-color: #161717;
+    color: white;
 }
 
 .container {
@@ -19,6 +19,7 @@ html {
 }
 
 .container h3 {
+    color: white;
     margin: 60px 0px 0px 0px;
     display: flex;
     align-self: flex-start;
@@ -44,7 +45,7 @@ html {
 }
 
 .google-btn:hover {
-    opacity: 0.75;
+    opacity: 0.90;
 }
 
 .google-btn picture {
@@ -83,19 +84,14 @@ html {
 }
 
 .twitter-btn:hover {
-    background-color: #d1d1d1;
-}
-
-.twitter-btn picture {
-    background-color: #F2F2F2;
+    background-color: #E5E5E5;
 }
 
 .twitter-btn picture img {
-    background-color: #F2F2F2;
-    margin-top: 3px;
+    margin-top: 2px;
     width: 40%;
     height: 34%;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .separator {
@@ -194,8 +190,9 @@ label input:focus {
     font-weight: 400;
 }
 
-.terms {
-    color: #4F3CC9;
+span.terms {
+    color: #6c56fd;
+    cursor: pointer;
 }
 
 .submit-btn {
