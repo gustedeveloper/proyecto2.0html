@@ -1,0 +1,42 @@
+.father {
+  width: 400px;
+  height: 400px;
+  background-color: #13293D;
+  /*background-color: #564787;*/
+}
+
+.son {
+  width: 50%;
+  height: 50%;
+  background-color: #13293D;
+  /*background-color: #dbcbd8;*/
+  transition: all 2s ease-in-out /*cubic-bezier(0.86, -0.32, 0, 1.24) sacado de inspeccionar;*/
+    /*2s, los segundos al final provocan un delay */
+}
+
+.father:hover .son {
+  transform: translateX(100%);
+  /*background-color: #ffe6fa;*/
+  animation: traslacion 2s;  
+}
+
+@keyframes traslacion {
+    0% { 
+        background-color: #214465;
+    }
+    25% {
+        background-color: #006494;
+    }
+
+    50% {
+        background-color: #247BA0;
+    }
+
+    75% {
+        background-color: #1B98E0;
+    }
+
+    100% {
+        background-color: #80C6EF;
+    }
+}
