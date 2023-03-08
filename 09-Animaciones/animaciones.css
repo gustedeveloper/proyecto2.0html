@@ -10,33 +10,40 @@
   height: 50%;
   background-color: #13293D;
   /*background-color: #dbcbd8;*/
-  transition: all 2s ease-in-out /*cubic-bezier(0.86, -0.32, 0, 1.24) sacado de inspeccionar;*/
+  /*transition: all 2s ease-in-out /*cubic-bezier(0.86, -0.32, 0, 1.24) sacado de inspeccionar;*/
     /*2s, los segundos al final provocan un delay */
+   /* animation: traslacion 2s infinite /*para que se ejecute siempre, no solo en hover*/
 }
 
 .father:hover .son {
-  transform: translateX(100%);
+  /*transform: translateX(100%);*/
   /*background-color: #ffe6fa;*/
-  animation: traslacion 2s;  
+    animation: traslacion 2s infinite /*alternate*/;  
+   /* animation-play-state: paused; para que al hacer hover, se pause*/
 }
 
 @keyframes traslacion {
     0% { 
         background-color: #214465;
-    }
-    25% {
-        background-color: #006494;
+        transform: translateX(0%) translateY(0%);
     }
 
+    25% { 
+        background-color: #214465;
+        transform: translateX(100%) translateY(0%);
+    }
     50% {
-        background-color: #247BA0;
+        background-color: #006494;
+        transform: translateX(100%) translateY(100%);
     }
 
     75% {
         background-color: #1B98E0;
+        transform: translateX(0%) translateY(100%);
     }
 
     100% {
         background-color: #80C6EF;
+        transform: translateX(0%) translateY(0%);
     }
 }
